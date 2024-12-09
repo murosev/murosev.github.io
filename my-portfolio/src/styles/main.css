@@ -1,36 +1,93 @@
-body {
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    color: #333;
-    background: #f7f7f7;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background: var(--background-color);
   }
   
   header, footer {
-    background: #222;
+    background: var(--primary-color);
     color: #fff;
     padding: 1rem;
     text-align: center;
   }
   
-  header ul {
+  header nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    gap: 1rem;
     justify-content: center;
   }
   
-  header li {
-    margin: 0 1rem;
-  }
-  
-  header a {
+  header nav a {
     color: #fff;
     text-decoration: none;
+    padding: 0.5rem;
+  }
+  
+  header nav a:hover {
+    background: var(--accent-color);
+    border-radius: 4px;
   }
   
   main {
-    padding: 1rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .home-container .hero {
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  
+  .home-container .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home-container .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  .links-section {
+    margin-top: 3rem;
+  }
+  
+  .links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+  }
+  
+  .link-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid #ddd;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .link-card:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .link-card h2 {
+    margin: 0 0 0.5rem;
   }
   
   .gallery-grid {
@@ -52,13 +109,27 @@ body {
   input, textarea {
     width: 100%;
     padding: 0.5rem;
+    font-family: var(--font-family);
+    border: 1px solid #ccc;
+    border-radius: 4px;
   }
   
   button {
     padding: 0.5rem;
-    background: #222;
+    background: var(--accent-color);
     color: #fff;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+  }
+  
+  button:hover {
+    background: #2980b9;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #eee;
   }
   
