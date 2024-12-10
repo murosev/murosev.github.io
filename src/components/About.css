@@ -1,0 +1,27 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .headshot-container {
+    margin-bottom: 20px;
+  }
+  
+  .headshot-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+  }
+  
+  .biography {
+    max-width: 800px;
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  

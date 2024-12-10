@@ -1,37 +1,32 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import './Contact.css';
 
-function Contact() {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
+const Contact: React.FC = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    setName('')
-    setEmail('')
-    setMessage('')
-  }
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+    setIsSubmitted(true);
+  };
 
   return (
-    <main>
-      <h2>Contact Me</h2>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Name
-          <input value={name} onChange={e => setName(e.target.value)} required />
-        </label>
-        <label>
-          Email
-          <input value={email} onChange={e => setEmail(e.target.value)} required type="email" />
-        </label>
-        <label>
-          Message
-          <textarea value={message} onChange={e => setMessage(e.target.value)} required />
-        </label>
-        <button type="submit">Send</button>
-      </form>
-    </main>
-  )
-}
+    <div className="contact-container">
+      {!isSubmitted ? (
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <h2>Contact Me</h2>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows={5} required />
+          <button type="submit">Send</button>
+        </form>
+      ) : (
+        <div className="thank-you-message">
+          <h2>Thank You!</h2>
+          <p>Your message has been sent. I'll get back to you soon!</p>
+        </div>
+      )}
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;
