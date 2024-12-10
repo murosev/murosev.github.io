@@ -42,7 +42,6 @@ function Resume() {
       >
         <h1>Magnus Urosev</h1>
         <p>
-          <a href="mailto:urosevmagnus@gmail.com">urosevmagnus@gmail.com</a> | (708) 837-1009 |{' '}
           <a href="https://www.linkedin.com/in/murosev001" target="_blank" rel="noopener noreferrer">
             www.linkedin.com/in/murosev001
           </a>
