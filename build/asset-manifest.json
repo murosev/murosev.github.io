@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b44d4652.css",
-    "main.js": "/static/js/main.822871e6.js",
+    "main.js": "/static/js/main.46ae00fc.js",
     "static/media/dog_4.jpg": "/static/media/dog_4.cb03d50b5401090af73f.jpg",
     "static/media/dog_5.jpg": "/static/media/dog_5.1cb718a31cc52af3aac8.jpg",
     "static/media/dog_1.jpg": "/static/media/dog_1.8d83652c8a08b7e3730b.jpg",
@@ -13,10 +13,10 @@
     "static/media/flute.jpg": "/static/media/flute.2b64300c9f674106988f.jpg",
     "index.html": "/index.html",
     "main.b44d4652.css.map": "/static/css/main.b44d4652.css.map",
-    "main.822871e6.js.map": "/static/js/main.822871e6.js.map"
+    "main.46ae00fc.js.map": "/static/js/main.46ae00fc.js.map"
   },
   "entrypoints": [
     "static/css/main.b44d4652.css",
-    "static/js/main.822871e6.js"
+    "static/js/main.46ae00fc.js"
   ]
 }
